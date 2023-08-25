@@ -6,31 +6,61 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: darkgrey;
+            color: black;
             text-align: center;
-            padding: 20px 0;
+            border: 5px solid black;
+
         }
         nav {
-            background-color: #444;
-            color: #fff;
+            background-color: darkcyan;
+            color: black;
             text-align: center;
-            padding: 10px 0;
+            border: 2px solid black;
         }
-        main {
-            background-color: #555;
-            max-width: 960px;
-            margin: 0 auto;
+        .main-container {
+            display: flex;
+            background-color: darkcyan;
+            justify-content: space-between;
+            margin-right: 10%;
+            margin-left: 10%;
             padding: 20px;
+            gap: 20px;
+            border: 2px solid black;
+
+        }
+        .articles {
+            flex: 2;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+
+        }
+        .article {
+            background-color: darkolivegreen;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .aside {
+            flex: 1;
+            background-color: antiquewhite;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 2px solid black;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: slategray;
+            color: black;
             text-align: center;
             padding: 10px 0;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -44,10 +74,85 @@
     <a href="#">Services</a> |
     <a href="#">Contact</a>
 </nav>
-<main>
-    <h2>Main Area</h2>
-    <p>This is the main content area. It has a maximum width of 960 pixels.</p>
-</main>
+<div class="main-container">
+    <div class="articles">
+        <div class="article">
+            <header>
+                <h2>Article 1 Header</h2>
+            </header>
+            <section>
+                <p>Article 1 Content</p>
+            </section>
+            <section>
+                <p>Article 1 Content</p>
+            </section>
+            <footer>
+                <p>Article 1 Footer</p>
+            </footer>
+        </div>
+        <div class="article">
+            <header>
+                <h2>Article 2 Header</h2>
+            </header>
+            <section>
+                <p>Article 2 Content</p>
+            </section>
+            <section>
+                <p>Article 2 Content</p>
+            </section>
+            <footer>
+                <p>Article 2 Footer</p>
+            </footer>
+        </div>
+        <div class="article">
+            <header>
+                <h2>Article 3 Header</h2>
+            </header>
+            <section>
+                <p>Article 3 Content</p>
+            </section>
+            <section>
+                <p>Article 3 Content</p>
+            </section>
+            <footer>
+                <p>Article 3 Footer</p>
+            </footer>
+        </div>
+        <div class="article">
+            <header>
+                <h2>Article 4 Header</h2>
+            </header>
+            <section>
+                <p>Article 4 Content</p>
+            </section>
+            <section>
+                <p>Article 4 Content</p>
+            </section>
+            <footer>
+                <p>Article 4 Footer</p>
+            </footer>
+        </div>
+    </div>
+    <aside class="aside">
+        <section>
+            <h2>Heading 1</h2>
+            <p>content1</p>
+            <footer>Footer1</footer>
+        </section>
+        <section>
+            <h2>Heading 2</h2>
+            <p>content2</p>
+            <footer>Footer2</footer>
+        </section>
+        <section>
+            <h2>Heading 3</h2>
+            <p>content3</p>
+            <footer>Footer3</footer>
+        </section>
+    </aside>
+</div>
+
+
 <footer>
     <p>Footer</p>
 </footer>
