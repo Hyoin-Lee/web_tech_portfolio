@@ -32,7 +32,6 @@
         background-color: darkgray;
         border: 2px black solid;
         flex-grow: 1;
-
     }
 
     .articles {
@@ -49,8 +48,12 @@
         align-items: center;
         justify-content: center;
         margin: 10px;
-
     }
+
+    aside {
+        display: none;
+    }
+
     footer {
         padding: 1rem;
         background-color: darkgray;
