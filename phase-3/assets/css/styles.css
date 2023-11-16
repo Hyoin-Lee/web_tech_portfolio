@@ -104,6 +104,12 @@
         border: 2px black solid;
     }
 
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .main-container {
         display: flex;
         justify-content: center;
@@ -123,7 +129,7 @@
     }
 
     .article {
-        text-align: center;
+        text-align: left;
         background-color: #ECD9DD;
         padding: 1rem;
         border: 2px solid black;
