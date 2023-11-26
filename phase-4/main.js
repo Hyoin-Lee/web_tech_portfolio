@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // When the "Get Weather" button is clicked
     document.getElementById("callApiButton").addEventListener("click", function() {
         // Get the city from the input field
-        var city = document.getElementById("city").value;
-        var apiKey = 'jya/Vq8/u1D8KkPhDlfDcg==i08YxWLUkNbYz7Ep'; // Replace with your actual API key
+        let city = document.getElementById("city").value;
+        let apiKey = 'jya/Vq8/u1D8KkPhDlfDcg==i08YxWLUkNbYz7Ep'; // Replace with your actual API key
 
         // Make an API call to the specified weather API using the Fetch API
         fetch(`https://api.api-ninjas.com/v1/weather?city=${city}`, {
