@@ -6,7 +6,12 @@ module.exports = {
       './pages/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+        screens: {
+            "sm" : "576px",
+            "md" : "768px"
+        }
+    },
   },
   plugins: [],
 };
